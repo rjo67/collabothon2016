@@ -1,0 +1,35 @@
+<head>
+<style>
+button {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: 1px solid #000;
+}
+</style>
+</head>
+<html>
+
+<script>
+val=0;
+function update(arg) {
+val=(val*10) + arg;
+    document.getElementById("display").value = val;
+}
+</script>
+
+<input type="text" name="display" id="display" size="15"/>
+<br>
+<button type="button" onclick="update(1)">1</button>
+<button type="button" onclick="update(2)">2</button>
+<button type="button" onclick="update(3)">3</button>
+<br>
+<button type="button" onclick="update(4)">4</button>
+<button type="button" onclick="update(5)">5</button>
+<button type="button" onclick="update(6)">6</button>
+<br>
+<button type="button" onclick="update(7)">7</button>
+<button type="button" onclick="update(8)">8</button>
+<button type="button" onclick="update(9)">9</button>
+
+</html>
